@@ -25,7 +25,7 @@ jobs:
       - name: Build Tailwind CSS
         run: npx tailwindcss -i ./src/styles/global.css -o ./dist/output.css --minify
       - name: Build Astro site
-        run: pnpm astro build
+        run: npm astro build
         
   deploy:
     needs: build
